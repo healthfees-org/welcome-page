@@ -569,12 +569,20 @@ body {
         padding: 1.5rem;
     }
     
+    .benefits-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .benefits-title {
+        font-size: 1.8rem;
+    }
+
     .cta-section {
         padding: 2rem 1.5rem;
     }
-    
-    .cta-button {
-        padding: 1rem 2rem;
+
+    .signup-button {
+        padding: 1rem 1.5rem;
         font-size: 1rem;
     }
 }
