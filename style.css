@@ -511,12 +511,39 @@ body {
         padding: 2rem;
     }
     
+    .benefits-section {
+        padding: 3rem 2rem;
+    }
+
+    .benefits-title {
+        font-size: 2rem;
+    }
+
+    .benefits-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .benefits-list li {
+        justify-content: center;
+    }
+
     .cta-section {
         padding: 3rem 2rem;
     }
-    
+
     .cta-title {
         font-size: 2rem;
+    }
+
+    .email-signup {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .email-input {
+        width: 100%;
     }
     
     .footer-content {
