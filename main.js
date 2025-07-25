@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     animatedElements.forEach(el => observer.observe(el));
 
     // Enhanced button interactions
-    const ctaButton = document.querySelector('.cta-button');
+    const signupButton = document.querySelector('.signup-button');
+    const emailInput = document.querySelector('.email-input');
     const featureCards = document.querySelectorAll('.feature-card');
     const heroeBadge = document.querySelector('.hero-badge');
 
