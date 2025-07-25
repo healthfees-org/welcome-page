@@ -199,9 +199,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Console welcome message for developers
-    console.log('%c🏥 HealthFees.org - ACA Transparency Toolkit', 
+    console.log('%c🏥 HealthFees.org - Healthcare Price Transparency Platform',
                 'color: #2563eb; font-size: 16px; font-weight: bold;');
-    console.log('%cBuilt with modern web technologies for healthcare transparency compliance.', 
+    console.log('%cBuilt with modern web technologies for healthcare pricing transparency and comparison.',
                 'color: #14b8a6; font-size: 12px;');
 });
 
