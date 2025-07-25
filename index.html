@@ -77,13 +77,13 @@
                 <div class="cta-content">
                     <h2 class="cta-title">Launching Fall 2025 – Join the Waitlist Now</h2>
                     <p class="cta-description">Be the first to access our healthcare pricing comparison tools, insights hub, and data explorer. We're building for the future of informed, cost-aware healthcare.</p>
-                    <div class="email-signup">
-                        <input type="email" class="email-input" placeholder="Enter your email address" aria-label="Email address">
-                        <button class="signup-button">
+                    <form class="email-signup" action="https://formspree.io/f/xrblqazw" method="POST">
+                        <input type="email" name="email" class="email-input" placeholder="Enter your email address" aria-label="Email address" required>
+                        <button type="submit" class="signup-button">
                             <i class="fas fa-bell"></i>
                             Notify Me at Launch
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </main>
