@@ -25,25 +25,84 @@ document.addEventListener('DOMContentLoaded', function() {
     const featureCards = document.querySelectorAll('.feature-card');
     const heroeBadge = document.querySelector('.hero-badge');
 
-    // CTA button enhanced interactions
-    if (ctaButton) {
-        ctaButton.addEventListener('mouseenter', function() {
+    // Email signup functionality
+    if (signupButton && emailInput) {
+        signupButton.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-3px) scale(1.02)';
         });
-        
-        ctaButton.addEventListener('mouseleave', function() {
+
+        signupButton.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
         });
-        
-        ctaButton.addEventListener('click', function() {
+
+        signupButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+
+            if (!email) {
+                emailInput.focus();
+                emailInput.style.borderColor = '#ef4444';
+                emailInput.placeholder = 'Please enter your email address';
+                setTimeout(() => {
+                    emailInput.style.borderColor = '';
+                    emailInput.placeholder = 'Enter your email address';
+                }, 3000);
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                emailInput.focus();
+                emailInput.style.borderColor = '#ef4444';
+                const originalValue = emailInput.value;
+                emailInput.value = '';
+                emailInput.placeholder = 'Please enter a valid email address';
+                setTimeout(() => {
+                    emailInput.style.borderColor = '';
+                    emailInput.value = originalValue;
+                    emailInput.placeholder = 'Enter your email address';
+                }, 3000);
+                return;
+            }
+
             // Add click animation
             this.style.transform = 'translateY(-1px) scale(0.98)';
             setTimeout(() => {
                 this.style.transform = 'translateY(-3px) scale(1.02)';
             }, 150);
-            
-            console.log('Accessing ACA Transparency Toolkit on Westlaw');
+
+            // Simulate signup process
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Adding to waitlist...';
+            this.disabled = true;
+
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-check"></i> You\'re on the list!';
+                this.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                emailInput.value = '';
+                emailInput.placeholder = 'Thank you for joining our waitlist!';
+
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-bell"></i> Notify Me at Launch';
+                    this.style.background = '';
+                    this.disabled = false;
+                    emailInput.placeholder = 'Enter your email address';
+                }, 3000);
+            }, 2000);
+
+            console.log(`Email signup: ${email} added to HealthFees.org waitlist`);
         });
+
+        // Enter key support for email input
+        emailInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                signupButton.click();
+            }
+        });
+
+        // Email validation helper
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
     }
 
     // Feature cards hover effects
