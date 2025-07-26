@@ -465,6 +465,39 @@ body {
 }
 
 /* Responsive Design */
+
+/* Large screens - prevent content from becoming too wide */
+@media (min-width: 1400px) {
+    .hero-subtitle {
+        max-width: 800px;
+    }
+
+    .cta-description {
+        max-width: 700px;
+    }
+
+    .content-grid {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+        max-width: 650px;
+    }
+}
+
 @media (max-width: 1024px) {
     .container {
         padding: 1.5rem;
