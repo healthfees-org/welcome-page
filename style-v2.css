@@ -672,75 +672,131 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0.75rem;
+        padding: 1rem;
     }
-    
+
+    .header {
+        margin-bottom: 1.5rem;
+    }
+
+    .main-content {
+        gap: 2rem;
+    }
+
     .hero-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
-    
+
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
     .brand-name {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
-    
+
+    .brand-tagline {
+        font-size: 0.9rem;
+    }
+
     .hero-badge {
-        font-size: 0.75rem;
-        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1.2rem;
     }
-    
+
+    .content-grid {
+        margin: 1.2rem 0;
+    }
+
     .feature-card {
-        padding: 1.25rem;
+        padding: 1.5rem 1.2rem;
     }
-    
+
     .feature-icon {
         width: 50px;
         height: 50px;
+        margin-bottom: 0.8rem;
     }
-    
+
     .feature-icon i {
         font-size: 1.25rem;
     }
-    
+
     .feature-title {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+        margin-bottom: 0.6rem;
     }
-    
+
     .feature-description {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
-    
+
     .benefits-section {
-        padding: 1.5rem 0.75rem;
+        padding: 2rem 1rem;
     }
 
     .benefits-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.2;
     }
-    
+
+    .benefits-list {
+        gap: 1rem;
+    }
+
     .benefits-list li {
         font-size: 0.9rem;
+        line-height: 1.4;
     }
 
     .cta-section {
-        padding: 1.5rem 0.75rem;
+        padding: 2rem 1rem;
     }
 
     .cta-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.2;
     }
-    
+
     .cta-description {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .email-signup {
+        max-width: 100%;
+        gap: 0.8rem;
     }
 
     .signup-button {
-        padding: 0.9rem 1.25rem;
-        font-size: 0.9rem;
+        padding: 1rem 1.2rem;
+        font-size: 0.95rem;
     }
-    
+
     .email-input {
-        padding: 0.9rem 1rem;
-        font-size: 0.9rem;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .footer-content {
+        padding: 1.2rem 0;
+    }
+
+    .footer-info p {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .footer-note {
+        font-size: 0.8rem !important;
+        line-height: 1.4;
     }
 }
 
