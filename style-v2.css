@@ -506,158 +506,164 @@ body {
     .container {
         padding: 1rem;
     }
-    
+
     .header {
         margin-bottom: 2rem;
     }
-    
+
     .main-content {
-        gap: 2rem;
+        gap: 2.5rem;
     }
-    
+
     .logo-section {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
-    
+
     .logo-icon {
         width: 60px;
         height: 60px;
     }
-    
+
     .logo-icon i {
         font-size: 2rem;
     }
-    
+
     .brand-info {
         text-align: center;
     }
-    
+
     .brand-name {
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin-bottom: 0.25rem;
     }
-    
+
     .brand-tagline {
         font-size: 1rem;
     }
-    
+
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
         line-height: 1.3;
     }
-    
+
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
         line-height: 1.5;
     }
-    
+
     .hero-badge {
-        font-size: 0.8rem;
-        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .content-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
     }
-    
+
     .feature-card {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
     }
-    
+
     .feature-icon {
         width: 60px;
         height: 60px;
         margin-bottom: 1rem;
     }
-    
+
     .feature-icon i {
         font-size: 1.5rem;
     }
-    
+
     .feature-title {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         margin-bottom: 0.75rem;
     }
-    
+
     .feature-description {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.6;
     }
-    
+
     .benefits-section {
-        padding: 2rem 1rem;
+        padding: 2.5rem 1.5rem;
     }
 
     .benefits-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 1.5rem;
+        line-height: 1.3;
     }
 
     .benefits-list {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.2rem;
         text-align: left;
     }
 
     .benefits-list li {
-        font-size: 0.95rem;
+        font-size: 1rem;
         gap: 0.75rem;
+        line-height: 1.5;
     }
 
     .cta-section {
-        padding: 2rem 1rem;
+        padding: 2.5rem 1.5rem;
     }
 
     .cta-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 0.75rem;
+        line-height: 1.3;
     }
-    
+
     .cta-description {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
     }
 
     .email-signup {
         flex-direction: column;
         width: 100%;
         gap: 1rem;
+        max-width: 400px;
     }
 
     .email-input {
         width: 100%;
-        padding: 1rem 1.25rem;
-        font-size: 0.95rem;
+        padding: 1.1rem 1.25rem;
+        font-size: 1rem;
     }
-    
+
     .signup-button {
         width: 100%;
         justify-content: center;
-        padding: 1rem 1.5rem;
-        font-size: 0.95rem;
+        padding: 1.1rem 1.5rem;
+        font-size: 1rem;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
         padding: 1.5rem 0;
     }
-    
+
     .footer-info p {
         font-size: 0.9rem;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
     }
-    
+
     .footer-note {
-        font-size: 0.8rem !important;
-        line-height: 1.4;
+        font-size: 0.85rem !important;
+        line-height: 1.5;
     }
-    
+
     .footer-links {
         justify-content: center;
         margin-top: 1rem;
