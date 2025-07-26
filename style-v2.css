@@ -818,3 +818,45 @@ html {
     outline: 2px solid var(--white);
     outline-offset: 2px;
 }
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+    /* Improve touch targets */
+    .hero-badge {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup-button,
+    .email-input {
+        min-height: 48px;
+    }
+
+    /* Prevent zoom on input focus on iOS */
+    .email-input {
+        font-size: 16px;
+    }
+
+    /* Optimize text selection */
+    .hero-title,
+    .hero-subtitle,
+    .feature-title,
+    .feature-description,
+    .benefits-title,
+    .cta-title,
+    .cta-description {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+}
+
+/* High DPI screen optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-icon,
+    .feature-icon {
+        border-radius: 20px;
+        background-size: cover;
+    }
+}
